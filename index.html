@@ -1,0 +1,1901 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=IT>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;!DOCTYPE html&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;html lang=&quot;it&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;head&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    &lt;meta charset=&quot;UTF-8&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+initial-scale=1.0&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    </span>&lt;title&gt;App Didattica: I
+Tipi di Guerra&lt;/title&gt;</p>
+
+<p class=MsoNormal>    &lt;style&gt;</p>
+
+<p class=MsoNormal>        /* === STILI GENERALI &amp; ACCESSIBILITÀ DSA/BES
+=== */</p>
+
+<p class=MsoNormal>        <span lang=EN-GB>:root {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            --bg-color: #f4f7f6;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            --text-color: #111111;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            --card-bg: #ffffff;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            --primary-color: #2c3e50;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            </span>--accent-color: #2980b9;</p>
+
+<p class=MsoNormal>            </p>
+
+<p class=MsoNormal>            /* Colori distintivi per tipo di guerra */</p>
+
+<p class=MsoNormal>            --color-stato: #c0392b;     /* Rosso */</p>
+
+<p class=MsoNormal>            --color-terroristi: #d35400;/* Arancione */</p>
+
+<p class=MsoNormal>            --color-civili: #8e44ad;    /* Viola */</p>
+
+<p class=MsoNormal>            --color-ibrida: #008080;    /* Ottanio */</p>
+
+<p class=MsoNormal>        <span lang=EN-GB>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        * {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            box-sizing: border-box;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin: 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-family: Arial, Helvetica,
+sans-serif;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        body {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background-color:
+var(--bg-color);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            color: var(--text-color);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-size: 19px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            line-height: 1.6;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding-bottom: 40px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        header {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background-color:
+var(--primary-color);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            color: white;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 15px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            text-align: center;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            position: sticky;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            top: 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            z-index: 100;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            box-shadow: 0 4px 6px
+rgba(0,0,0,0.1);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .user-stats {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            display: flex;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            justify-content: center;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            gap: 20px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin-top: 10px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-size: 16px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            flex-wrap: wrap;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .stat-box {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background: rgba(255, 255, 255,
+0.2);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 5px 12px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-radius: 20px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-weight: bold;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        nav {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            display: flex;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            justify-content: center;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background: #34495e;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            flex-wrap: wrap;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        nav button {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background: none;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border: none;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            color: white;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 14px 20px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-size: 18px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-weight: bold;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            cursor: pointer;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            transition: 0.3s;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        nav button:hover, nav button.active
+{</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background:
+var(--accent-color);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        nav button:disabled {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            opacity: 0.4;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            cursor: not-allowed;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .container {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            max-width: 900px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin: 20px auto;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 0 15px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .section {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            display: none;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background: var(--card-bg);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 25px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-radius: 12px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            box-shadow: 0 4px 10px
+rgba(0,0,0,0.08);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .section.active {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            display: block;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        h2 {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin-bottom: 20px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            color: var(--primary-color);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-bottom: 3px solid
+var(--accent-color);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding-bottom: 5px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        /* === FORM INIZIALE === */</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .form-group {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin-bottom: 15px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .form-group label {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            display: block;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-weight: bold;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin-bottom: 5px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .form-group input {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            width: 100%;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 12px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-size: 18px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border: 2px solid #ccc;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-radius: 8px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .btn-main {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background-color: #27ae60;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            color: white;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 14px 28px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-size: 20px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-weight: bold;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border: none;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-radius: 8px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            cursor: pointer;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            width: 100%;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin-top: 15px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .btn-main:hover {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background-color: #219150;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        /* === MODULO IMPARA === */</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .progress-bar-container {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            width: 100%;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background: #eee;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            height: 20px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-radius: 10px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            overflow: hidden;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin-bottom: 20px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .progress-bar {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            height: 100%;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            width: 0%;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background: #27ae60;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            transition: width 0.3s;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .war-card {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-left: 10px solid #ccc;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 20px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin-bottom: 20px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-radius: 8px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background: #f9f9f9;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .war-card.type-1 { border-color:
+var(--color-stato); }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .war-card.type-2 { border-color:
+var(--color-terroristi); }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .war-card.type-3 { border-color:
+var(--color-civili); }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .war-card.type-4 { border-color:
+var(--color-ibrida); }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .tag-keyword {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            display: inline-block;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background: #e0e0e0;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 4px 10px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-radius: 5px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-weight: bold;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin-top: 10px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        /* === MODULO MEMORIZZA === */</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .flashcard-grid {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            display: grid;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            grid-template-columns:
+repeat(auto-fit, minmax(250px, 1fr));</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            gap: 20px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin-bottom: 30px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .flashcard {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            height: 200px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            perspective: 1000px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            cursor: pointer;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .flashcard-inner {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            position: relative;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            width: 100%;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            height: 100%;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            text-align: center;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            transition: transform 0.6s;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            transform-style: preserve-3d;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            box-shadow: 0 4px 8px
+rgba(0,0,0,0.1);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-radius: 10px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .flashcard.flipped .flashcard-inner
+{</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            transform: rotateY(180deg);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .flashcard-front, .flashcard-back {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            position: absolute;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            width: 100%;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            height: 100%;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            backface-visibility: hidden;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            display: flex;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            align-items: center;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            justify-content: center;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            flex-direction: column;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 15px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-radius: 10px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            color: white;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-weight: bold;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .flashcard-back {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            transform: rotateY(180deg);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background: #34495e !important;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-weight: normal;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-size: 16px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        /* MATCHING GAME */</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .matching-container {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            display: flex;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            justify-content: space-between;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            gap: 15px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            flex-wrap: wrap;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .matching-col {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            flex: 1;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            min-width: 250px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .match-btn {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            width: 100%;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 12px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin-bottom: 10px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border: 2px solid #ccc;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background: white;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-radius: 8px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            cursor: pointer;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-size: 16px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            text-align: left;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .match-btn.selected { border-color:
+var(--accent-color); background: #ebf5fb; }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .match-btn.matched { border-color:
+#27ae60; background: #d4efdf; cursor: default; }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        </span>/* === MODULO VERIFICA ===
+*/</p>
+
+<p class=MsoNormal>        .quiz-question {</p>
+
+<p class=MsoNormal>            margin-bottom: 25px;</p>
+
+<p class=MsoNormal>            <span lang=EN-GB>background: #f9f9f9;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 15px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-radius: 8px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .quiz-options button {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            display: block;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            width: 100%;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            padding: 12px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin: 8px 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            background: white;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border: 2px solid #ddd;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            border-radius: 6px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            text-align: left;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-size: 17px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            cursor: pointer;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .quiz-options button.correct { background:
+#d4efdf; border-color: #27ae60; }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .quiz-options button.wrong {
+background: #fadbd8; border-color: #e74c3c; }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        .feedback-text {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            margin-top: 8px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-weight: bold;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            font-size: 16px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        /* === REPORT PDF / STAMPA === */</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        #report-section {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            display: none;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        @media print {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            body { background: white;
+color: black; font-size: 14pt; }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            header, nav, .container,
+.btn-main { display: none !important; }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            #report-section { display:
+block !important; padding: 20px; }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            .print-header { border-bottom:
+2px solid #000; padding-bottom: 10px; margin-bottom: 20px; }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            .signature-space { margin-top:
+50px; border-top: 1px dashed #000; pt: 10px; text-align: right; }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    &lt;/style&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;/head&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;body&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    &lt;header&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        &lt;h1&gt;I Tipi di Guerra - App
+Didattica&lt;/h1&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        &lt;div
+class=&quot;user-stats&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;span
+class=&quot;stat-box&quot;&gt;Livello: &lt;span
+id=&quot;lbl-level&quot;&gt;1&lt;/span&gt;&lt;/span&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;span
+class=&quot;stat-box&quot;&gt;Punti XP: &lt;span
+id=&quot;lbl-xp&quot;&gt;0&lt;/span&gt;&lt;/span&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;span
+class=&quot;stat-box&quot;&gt;Badge: &lt;span
+id=&quot;lbl-badges&quot;&gt;Nessuno&lt;/span&gt;&lt;/span&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    &lt;/header&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    &lt;nav id=&quot;navbar&quot;
+style=&quot;display: none;&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        &lt;button
+id=&quot;nav-impara&quot; onclick=&quot;showSection('sec-impara')&quot;&gt;1.
+Impara&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        &lt;button
+id=&quot;nav-memorizza&quot; onclick=&quot;showSection('sec-memorizza')&quot;
+disabled&gt;2. Memorizza&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        &lt;button
+id=&quot;nav-verifica&quot; onclick=&quot;showSection('sec-verifica')&quot;
+disabled&gt;3. Verifica&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        &lt;button
+id=&quot;nav-report&quot; onclick=&quot;generateReport()&quot;&gt;4. Report
+Finale&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    </span>&lt;/nav&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    &lt;div class=&quot;container&quot;&gt;</p>
+
+<p class=MsoNormal>        &lt;!-- SCHERMATA INIZIALE: REGISTRAZIONE STUDENTE
+--&gt;</p>
+
+<p class=MsoNormal>        <span lang=EN-GB>&lt;div id=&quot;sec-login&quot;
+class=&quot;section active&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            </span>&lt;h2&gt;Scheda
+Studente&lt;/h2&gt;</p>
+
+<p class=MsoNormal>            &lt;p&gt;Inserisci i tuoi dati prima di iniziare
+la lezione:&lt;/p&gt;&lt;br&gt;</p>
+
+<p class=MsoNormal>            <span lang=EN-GB>&lt;form
+id=&quot;form-student&quot; onsubmit=&quot;startApp(event)&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;div class=&quot;form-group&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                   
+&lt;label&gt;Nome:&lt;/label&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                    &lt;input
+type=&quot;text&quot; id=&quot;stu-nome&quot; required&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;div
+class=&quot;form-group&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                   
+&lt;label&gt;Cognome:&lt;/label&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                    &lt;input type=&quot;text&quot;
+id=&quot;stu-cognome&quot; required&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;div
+class=&quot;form-group&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                   
+&lt;label&gt;Scuola:&lt;/label&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                    &lt;input
+type=&quot;text&quot; id=&quot;stu-scuola&quot; placeholder=&quot;Es. IIS
+Garibaldi&quot; required&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;div
+class=&quot;form-group&quot; style=&quot;display: flex; gap: 10px;&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                    &lt;div
+style=&quot;flex:1;&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                       
+&lt;label&gt;Classe:&lt;/label&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                        &lt;input
+type=&quot;text&quot; id=&quot;stu-classe&quot; placeholder=&quot;Es. 3&quot;
+required&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                    </span>&lt;/div&gt;</p>
+
+<p class=MsoNormal>                    &lt;div style=&quot;flex:1;&quot;&gt;</p>
+
+<p class=MsoNormal>                        &lt;label&gt;Sezione:&lt;/label&gt;</p>
+
+<p class=MsoNormal>                        <span lang=EN-GB>&lt;input
+type=&quot;text&quot; id=&quot;stu-sezione&quot; placeholder=&quot;Es. A&quot;
+required&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                    &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;div
+class=&quot;form-group&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                   
+&lt;label&gt;Data:&lt;/label&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                    &lt;input
+type=&quot;date&quot; id=&quot;stu-data&quot; required&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;button
+type=&quot;submit&quot; class=&quot;btn-main&quot;&gt;Inizia la Lezione&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;/form&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        &lt;!-- MODULO 1: IMPARA --&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>        &lt;div id=&quot;sec-impara&quot;
+class=&quot;section&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            </span>&lt;h2&gt;Modulo 1:
+Impara i Tipi di Guerra&lt;/h2&gt;</p>
+
+<p class=MsoNormal>            &lt;p&gt;Leggi attentamente tutte le 4 schede
+per sbloccare il modulo successivo.&lt;/p&gt;&lt;br&gt;</p>
+
+<p class=MsoNormal>            </p>
+
+<p class=MsoNormal>            <span lang=EN-GB>&lt;div
+class=&quot;progress-bar-container&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;div
+class=&quot;progress-bar&quot; id=&quot;read-progress&quot;&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;div class=&quot;war-card
+type-1&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;h3 style=&quot;color:
+var(--color-stato);&quot;&gt;1. </span>Stato vs Stato&lt;/h3&gt;</p>
+
+<p class=MsoNormal>               
+&lt;p&gt;&lt;strong&gt;Definizione:&lt;/strong&gt; Guerra tradizionale tra due
+o più Paesi ufficiali.&lt;/p&gt;</p>
+
+<p class=MsoNormal>                &lt;p&gt;&lt;strong&gt;Scopo:&lt;/strong&gt;
+Conquistare i territori.&lt;/p&gt;</p>
+
+<p class=MsoNormal>                &lt;p&gt;&lt;strong&gt;Esempio:&lt;/strong&gt;
+Ucraina vs Russia oppure la Seconda guerra mondiale.&lt;/p&gt;</p>
+
+<p class=MsoNormal>                &lt;span
+class=&quot;tag-keyword&quot;&gt;Parola chiave:
+Territorio&lt;/span&gt;&lt;br&gt;&lt;br&gt;</p>
+
+<p class=MsoNormal>                &lt;button class=&quot;btn-read&quot;
+onclick=&quot;markAsRead(0, this)&quot;&gt;Ho letto questa scheda <span
+style='font-family:"Segoe UI Symbol","sans-serif"'>&#10003;</span>&lt;/button&gt;</p>
+
+<p class=MsoNormal>            <span lang=EN-GB>&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;div class=&quot;war-card
+type-2&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;h3 style=&quot;color:
+var(--color-terroristi);&quot;&gt;2. </span>Stato vs Terroristi&lt;/h3&gt;</p>
+
+<p class=MsoNormal>               
+&lt;p&gt;&lt;strong&gt;Definizione:&lt;/strong&gt; Conflitto tra un Paese e
+gruppi armati di terroristi.&lt;/p&gt;</p>
+
+<p class=MsoNormal>                &lt;p&gt;&lt;strong&gt;Scopo:&lt;/strong&gt;
+Destabilizzare uno Stato (creare caos e paura nel governo).&lt;/p&gt;</p>
+
+<p class=MsoNormal>               
+&lt;p&gt;&lt;strong&gt;Esempio:&lt;/strong&gt; Stati Uniti vs Al Qaida / ISIS.
+&lt;em&gt;Nota: I terroristi non hanno uno Stato proprio.&lt;/em&gt;&lt;/p&gt;</p>
+
+<p class=MsoNormal>                &lt;span
+class=&quot;tag-keyword&quot;&gt;Parola chiave:
+Destabilizzazione&lt;/span&gt;&lt;br&gt;&lt;br&gt;</p>
+
+<p class=MsoNormal>                <span lang=EN-GB>&lt;button
+class=&quot;btn-read&quot; onclick=&quot;markAsRead(1, this)&quot;&gt;Ho letto
+questa scheda </span><span lang=EN-GB style='font-family:"Segoe UI Symbol","sans-serif"'>&#10003;</span><span
+lang=EN-GB>&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;div class=&quot;war-card
+type-3&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;h3 style=&quot;color:
+var(--color-civili);&quot;&gt;3. </span>Stato vs Civili (Ribelli)&lt;/h3&gt;</p>
+
+<p class=MsoNormal>               
+&lt;p&gt;&lt;strong&gt;Definizione:&lt;/strong&gt; Scontro all'interno di un
+Paese tra il governo e i propri cittadini armati.&lt;/p&gt;</p>
+
+<p class=MsoNormal>                &lt;p&gt;&lt;strong&gt;Scopo:&lt;/strong&gt;
+Cacciare i governanti dal potere.&lt;/p&gt;</p>
+
+<p class=MsoNormal>               
+&lt;p&gt;&lt;strong&gt;Esempio:&lt;/strong&gt; Partigiani vs Fascisti durante
+la Resistenza.&lt;/p&gt;</p>
+
+<p class=MsoNormal>                &lt;span
+class=&quot;tag-keyword&quot;&gt;Parola chiave: Cacciare i
+governanti&lt;/span&gt;&lt;br&gt;&lt;br&gt;</p>
+
+<p class=MsoNormal>                <span lang=EN-GB>&lt;button class=&quot;btn-read&quot;
+onclick=&quot;markAsRead(2, this)&quot;&gt;Ho letto questa scheda </span><span
+lang=EN-GB style='font-family:"Segoe UI Symbol","sans-serif"'>&#10003;</span><span
+lang=EN-GB>&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;div class=&quot;war-card
+type-4&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;h3 style=&quot;color:
+var(--color-ibrida);&quot;&gt;4. </span>Guerra Ibrida&lt;/h3&gt;</p>
+
+<p class=MsoNormal>                &lt;p&gt;&lt;strong&gt;Definizione:&lt;/strong&gt;
+Guerra invisibile condotta tramite attacchi informatici ed economici.&lt;/p&gt;</p>
+
+<p class=MsoNormal>                &lt;p&gt;&lt;strong&gt;Scopo:&lt;/strong&gt;
+Creare disagio alla popolazione e bloccare i servizi principali.&lt;/p&gt;</p>
+
+<p class=MsoNormal>               
+&lt;p&gt;&lt;strong&gt;Esempio:&lt;/strong&gt; Terroristi informatici (hacker)
+che attaccano ospedali o banche.&lt;/p&gt;</p>
+
+<p class=MsoNormal>                <span lang=EN-GB>&lt;span
+class=&quot;tag-keyword&quot;&gt;Parola chiave: Hacker e
+Disagio&lt;/span&gt;&lt;br&gt;&lt;br&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;button
+class=&quot;btn-read&quot; onclick=&quot;markAsRead(3, this)&quot;&gt;Ho letto
+questa scheda </span><span lang=EN-GB style='font-family:"Segoe UI Symbol","sans-serif"'>&#10003;</span><span
+lang=EN-GB>&lt;/button&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            </span>&lt;/div&gt;</p>
+
+<p class=MsoNormal>        &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        &lt;!-- MODULO 2: MEMORIZZA --&gt;</p>
+
+<p class=MsoNormal>        &lt;div id=&quot;sec-memorizza&quot;
+class=&quot;section&quot;&gt;</p>
+
+<p class=MsoNormal>            &lt;h2&gt;Modulo 2: Memorizza ed
+Esercitati&lt;/h2&gt;</p>
+
+<p class=MsoNormal>            </p>
+
+<p class=MsoNormal>            &lt;h3&gt;Attività A: Flashcard
+Girevoli&lt;/h3&gt;</p>
+
+<p class=MsoNormal>            &lt;p&gt;Clicca sulle carte per scoprire lo
+scopo e l'esempio!&lt;/p&gt;&lt;br&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            <span lang=EN-GB>&lt;div
+class=&quot;flashcard-grid&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;div
+class=&quot;flashcard&quot;
+onclick=&quot;this.classList.toggle('flipped')&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                    &lt;div
+class=&quot;flashcard-inner&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                        &lt;div
+class=&quot;flashcard-front&quot; style=&quot;background:
+var(--color-stato);&quot;&gt;Stato vs Stato&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                        </span>&lt;div
+class=&quot;flashcard-back&quot;&gt;&lt;strong&gt;Scopo:&lt;/strong&gt;
+Conquistare territori.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Esempio:&lt;/strong&gt;
+Ucraina vs Russia / 2ª Guerra Mondiale&lt;/div&gt;</p>
+
+<p class=MsoNormal>                    <span lang=EN-GB>&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;div
+class=&quot;flashcard&quot;
+onclick=&quot;this.classList.toggle('flipped')&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                    &lt;div
+class=&quot;flashcard-inner&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                        &lt;div
+class=&quot;flashcard-front&quot; style=&quot;background:
+var(--color-terroristi);&quot;&gt;Stato vs Terroristi&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                        </span>&lt;div
+class=&quot;flashcard-back&quot;&gt;&lt;strong&gt;Scopo:&lt;/strong&gt;
+Destabilizzare uno
+Stato.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Esempio:&lt;/strong&gt; USA vs Al Qaida
+(ISIS)&lt;/div&gt;</p>
+
+<p class=MsoNormal>                    <span lang=EN-GB>&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;div
+class=&quot;flashcard&quot;
+onclick=&quot;this.classList.toggle('flipped')&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                    &lt;div
+class=&quot;flashcard-inner&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                        &lt;div
+class=&quot;flashcard-front&quot; style=&quot;background: var(--color-civili);&quot;&gt;Stato
+vs Civili (Ribelli)&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                        </span>&lt;div
+class=&quot;flashcard-back&quot;&gt;&lt;strong&gt;Scopo:&lt;/strong&gt;
+Cacciare i governanti.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Esempio:&lt;/strong&gt;
+Partigiani vs Fascisti&lt;/div&gt;</p>
+
+<p class=MsoNormal>                    <span lang=EN-GB>&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;div
+class=&quot;flashcard&quot;
+onclick=&quot;this.classList.toggle('flipped')&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                    &lt;div
+class=&quot;flashcard-inner&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                        &lt;div
+class=&quot;flashcard-front&quot; style=&quot;background:
+var(--color-ibrida);&quot;&gt;Guerra Ibrida&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                        </span>&lt;div
+class=&quot;flashcard-back&quot;&gt;&lt;strong&gt;Scopo:&lt;/strong&gt; Creare
+disagio alla
+popolazione.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Esempio:&lt;/strong&gt;
+Terroristi informatici (Hacker)&lt;/div&gt;</p>
+
+<p class=MsoNormal>                    <span lang=EN-GB>&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;hr&gt;&lt;br&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            </span>&lt;h3&gt;Attività B:
+Gioco di Abbinamento&lt;/h3&gt;</p>
+
+<p class=MsoNormal>            &lt;p&gt;Seleziona un tipo di guerra a sinistra
+e collegalo allo scopo/esempio corretto a destra.&lt;/p&gt;</p>
+
+<p class=MsoNormal>            <span lang=EN-GB>&lt;p&gt;Tentativi effettuati:
+&lt;strong id=&quot;match-attempts&quot;&gt;0&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            &lt;div
+class=&quot;matching-container&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;div
+class=&quot;matching-col&quot; id=&quot;col-left&quot;&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;div
+class=&quot;matching-col&quot; id=&quot;col-right&quot;&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            </span>&lt;/div&gt;</p>
+
+<p class=MsoNormal>        &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        &lt;!-- MODULO 3: VERIFICA --&gt;</p>
+
+<p class=MsoNormal>        &lt;div id=&quot;sec-verifica&quot;
+class=&quot;section&quot;&gt;</p>
+
+<p class=MsoNormal>            &lt;h2&gt;Modulo 3: Verifica Finale&lt;/h2&gt;</p>
+
+<p class=MsoNormal>            &lt;p&gt;Rispondi a tutte le 10 domande.
+Riceverai un feedback immediato!&lt;/p&gt;&lt;br&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            <span lang=EN-GB>&lt;div
+id=&quot;quiz-container&quot;&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            </span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            </span>&lt;button
+id=&quot;btn-submit-quiz&quot; class=&quot;btn-main&quot;
+onclick=&quot;finishQuiz()&quot; style=&quot;display:none;&quot;&gt;Completa la
+Verifica e Guarda il Voto&lt;/button&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            <span lang=EN-GB>&lt;div
+id=&quot;quiz-result&quot; style=&quot;display:none; margin-top:20px;
+text-align:center;&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                </span>&lt;h3&gt;Esito della
+Verifica&lt;/h3&gt;</p>
+
+<p class=MsoNormal>                <span lang=EN-GB>&lt;p
+style=&quot;font-size: 28px; font-weight:bold; color:var(--accent-color);&quot;
+id=&quot;lbl-score&quot;&gt;&lt;/p&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>                &lt;p
+id=&quot;lbl-feedback-message&quot; style=&quot;font-size: 20px;
+font-weight:bold; margin-top:10px;&quot;&gt;&lt;/p&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>            </span>&lt;/div&gt;</p>
+
+<p class=MsoNormal>        &lt;/div&gt;</p>
+
+<p class=MsoNormal>    &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    &lt;!-- REPORT PDF PER STAMPA A4 --&gt;</p>
+
+<p class=MsoNormal>    &lt;div id=&quot;report-section&quot;&gt;</p>
+
+<p class=MsoNormal>        &lt;div class=&quot;print-header&quot;&gt;</p>
+
+<p class=MsoNormal>            &lt;h1&gt;Report Valutativo - App Didattica
+&quot;I Tipi di Guerra&quot;&lt;/h1&gt;</p>
+
+<p class=MsoNormal>            &lt;p&gt;&lt;strong&gt;Studente:&lt;/strong&gt;
+&lt;span id=&quot;rep-nome&quot;&gt;&lt;/span&gt; |
+&lt;strong&gt;Classe:&lt;/strong&gt; &lt;span
+id=&quot;rep-classe&quot;&gt;&lt;/span&gt; |
+&lt;strong&gt;Scuola:&lt;/strong&gt; &lt;span id=&quot;rep-scuola&quot;&gt;&lt;/span&gt;&lt;/p&gt;</p>
+
+<p class=MsoNormal>            &lt;p&gt;&lt;strong&gt;Data:&lt;/strong&gt;
+&lt;span id=&quot;rep-data&quot;&gt;&lt;/span&gt;&lt;/p&gt;</p>
+
+<p class=MsoNormal>        &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        &lt;h3&gt;Risultati Didattici e
+Gamification&lt;/h3&gt;</p>
+
+<p class=MsoNormal>        &lt;p&gt;&lt;strong&gt;Punti XP
+Guadagnati:&lt;/strong&gt; &lt;span
+id=&quot;rep-xp&quot;&gt;&lt;/span&gt;&lt;/p&gt;</p>
+
+<p class=MsoNormal>        &lt;p&gt;&lt;strong&gt;Badge
+Sbloccati:&lt;/strong&gt; &lt;span
+id=&quot;rep-badges&quot;&gt;&lt;/span&gt;&lt;/p&gt;</p>
+
+<p class=MsoNormal>        &lt;p&gt;&lt;strong&gt;Voto Verifica:&lt;/strong&gt;
+&lt;span id=&quot;rep-voto&quot;&gt;&lt;/span&gt; / 10&lt;/p&gt;</p>
+
+<p class=MsoNormal>        &lt;br&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        &lt;h3&gt;Dettaglio Domande Errate&lt;/h3&gt;</p>
+
+<p class=MsoNormal>        &lt;ul id=&quot;rep-wrong-list&quot;
+style=&quot;margin-left: 20px;&quot;&gt;&lt;/ul&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        &lt;div class=&quot;signature-space&quot;&gt;</p>
+
+<p class=MsoNormal>            &lt;p&gt;Firma del docente: ___________________________&lt;/p&gt;</p>
+
+<p class=MsoNormal>        &lt;/div&gt;</p>
+
+<p class=MsoNormal>    &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    &lt;script&gt;</p>
+
+<p class=MsoNormal>        // === STATO DELL'APPLICAZIONE ===</p>
+
+<p class=MsoNormal>        let studentData = {};</p>
+
+<p class=MsoNormal>        let xp = 0;</p>
+
+<p class=MsoNormal>        let badges = [];</p>
+
+<p class=MsoNormal>        let readCards = [false, false, false, false];</p>
+
+<p class=MsoNormal>        let quizScore = 0;</p>
+
+<p class=MsoNormal>        let userQuizAnswers = [];</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        // Inizializza data odierna</p>
+
+<p class=MsoNormal>        document.getElementById('stu-data').valueAsDate =
+new Date();</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        function addXP(points) {</p>
+
+<p class=MsoNormal>            xp += points;</p>
+
+<p class=MsoNormal>            document.getElementById('lbl-xp').innerText =
+xp;</p>
+
+<p class=MsoNormal>            document.getElementById('lbl-level').innerText =
+Math.floor(xp / 100) + 1;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        function unlockBadge(badgeName) {</p>
+
+<p class=MsoNormal>            if (!badges.includes(badgeName)) {</p>
+
+<p class=MsoNormal>                badges.push(badgeName);</p>
+
+<p class=MsoNormal>               
+document.getElementById('lbl-badges').innerText = badges.join(&quot;, &quot;);</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        function startApp(e) {</p>
+
+<p class=MsoNormal>            e.preventDefault();</p>
+
+<p class=MsoNormal>            studentData = {</p>
+
+<p class=MsoNormal>                nome: document.getElementById('stu-nome').value
++ &quot; &quot; + document.getElementById('stu-cognome').value,</p>
+
+<p class=MsoNormal>                classe:
+document.getElementById('stu-classe').value + &quot; &quot; +
+document.getElementById('stu-sezione').value,</p>
+
+<p class=MsoNormal>                scuola:
+document.getElementById('stu-scuola').value,</p>
+
+<p class=MsoNormal>                data:
+document.getElementById('stu-data').value</p>
+
+<p class=MsoNormal>            };</p>
+
+<p class=MsoNormal>           
+document.getElementById('sec-login').classList.remove('active');</p>
+
+<p class=MsoNormal>            document.getElementById('navbar').style.display
+= 'flex';</p>
+
+<p class=MsoNormal>            showSection('sec-impara');</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        function showSection(id) {</p>
+
+<p class=MsoNormal>            document.querySelectorAll('.section').forEach(s
+=&gt; s.classList.remove('active'));</p>
+
+<p class=MsoNormal>            document.querySelectorAll('nav
+button').forEach(b =&gt; b.classList.remove('active'));</p>
+
+<p class=MsoNormal>           
+document.getElementById(id).classList.add('active');</p>
+
+<p class=MsoNormal>            if(document.getElementById('nav-' +
+id.replace('sec-', ''))) {</p>
+
+<p class=MsoNormal>                document.getElementById('nav-' +
+id.replace('sec-', '')).classList.add('active');</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        // === LOGICA MODULO IMPARA ===</p>
+
+<p class=MsoNormal>        function markAsRead(index, btn) {</p>
+
+<p class=MsoNormal>            readCards[index] = true;</p>
+
+<p class=MsoNormal>            btn.innerText = &quot;Completato <span
+style='font-family:"Segoe UI Symbol","sans-serif"'>&#10003;</span>&quot;;</p>
+
+<p class=MsoNormal>            btn.disabled = true;</p>
+
+<p class=MsoNormal>            btn.style.opacity = &quot;0.6&quot;;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            let count = readCards.filter(Boolean).length;</p>
+
+<p class=MsoNormal>           
+document.getElementById('read-progress').style.width = (count / 4 * 100) +
+&quot;%&quot;;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            if (count === 4) {</p>
+
+<p class=MsoNormal>                unlockBadge(&quot;Studioso <span
+style='font-family:"Segoe UI Symbol","sans-serif"'>&#128220;</span>&quot;);</p>
+
+<p class=MsoNormal>                addXP(50);</p>
+
+<p class=MsoNormal>               
+document.getElementById('nav-memorizza').disabled = false;</p>
+
+<p class=MsoNormal>                alert(&quot;Complimenti! Hai letto tutte le
+schede. Hai sbloccato il Badge 'Studioso' (+50 XP) e la sezione
+Memorizza!&quot;);</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        // === LOGICA MODULO MEMORIZZA (MATCHING GAME) ===</p>
+
+<p class=MsoNormal>        const matchData = [</p>
+
+<p class=MsoNormal>            { type: &quot;Stato vs Stato&quot;, desc:
+&quot;Scopo: Conquistare territori (Es. Ucraina vs Russia)&quot; },</p>
+
+<p class=MsoNormal>            { type: &quot;Stato vs Terroristi&quot;, desc:
+&quot;Scopo: Destabilizzare uno Stato (Es. USA vs Al Qaida)&quot; },</p>
+
+<p class=MsoNormal>            { type: &quot;Stato vs Civili&quot;, desc:
+&quot;Scopo: Cacciare i governanti (Es. Partigiani vs Fascisti)&quot; },</p>
+
+<p class=MsoNormal>            { type: &quot;Guerra Ibrida&quot;, desc:
+&quot;Scopo: Creare disagio con hacker informatici&quot; }</p>
+
+<p class=MsoNormal>        ];</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        let selectedLeft = null;</p>
+
+<p class=MsoNormal>        let attempts = 0;</p>
+
+<p class=MsoNormal>        let matchedCount = 0;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        function initMatchingGame() {</p>
+
+<p class=MsoNormal>            const leftCol =
+document.getElementById('col-left');</p>
+
+<p class=MsoNormal>            const rightCol =
+document.getElementById('col-right');</p>
+
+<p class=MsoNormal>            leftCol.innerHTML = &quot;&quot;;</p>
+
+<p class=MsoNormal>            rightCol.innerHTML = &quot;&quot;;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            let shuffledRight = [...matchData].sort(() =&gt;
+Math.random() - 0.5);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            matchData.forEach((item, idx) =&gt; {</p>
+
+<p class=MsoNormal>                let btnL = document.createElement('button');</p>
+
+<p class=MsoNormal>                btnL.className = 'match-btn';</p>
+
+<p class=MsoNormal>                btnL.innerText = item.type;</p>
+
+<p class=MsoNormal>                btnL.onclick = () =&gt; selectMatch('left',
+idx, btnL);</p>
+
+<p class=MsoNormal>                leftCol.appendChild(btnL);</p>
+
+<p class=MsoNormal>            });</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            shuffledRight.forEach((item) =&gt; {</p>
+
+<p class=MsoNormal>                let btnR = document.createElement('button');</p>
+
+<p class=MsoNormal>                btnR.className = 'match-btn';</p>
+
+<p class=MsoNormal>                btnR.innerText = item.desc;</p>
+
+<p class=MsoNormal>                btnR.onclick = () =&gt; selectMatch('right',
+item.type, btnR);</p>
+
+<p class=MsoNormal>                rightCol.appendChild(btnR);</p>
+
+<p class=MsoNormal>            });</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        function selectMatch(side, val, btn) {</p>
+
+<p class=MsoNormal>            if (btn.classList.contains('matched')) return;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            if (side === 'left') {</p>
+
+<p class=MsoNormal>                document.querySelectorAll('#col-left
+.match-btn').forEach(b =&gt; b.classList.remove('selected'));</p>
+
+<p class=MsoNormal>                btn.classList.add('selected');</p>
+
+<p class=MsoNormal>                selectedLeft = { type: matchData[val].type,
+btn: btn };</p>
+
+<p class=MsoNormal>            } else if (side === 'right' &amp;&amp; selectedLeft)
+{</p>
+
+<p class=MsoNormal>                attempts++;</p>
+
+<p class=MsoNormal>               
+document.getElementById('match-attempts').innerText = attempts;</p>
+
+<p class=MsoNormal>                </p>
+
+<p class=MsoNormal>                if (selectedLeft.type === val) {</p>
+
+<p class=MsoNormal>                   
+selectedLeft.btn.classList.remove('selected');</p>
+
+<p class=MsoNormal>                    selectedLeft.btn.classList.add('matched');</p>
+
+<p class=MsoNormal>                    btn.classList.add('matched');</p>
+
+<p class=MsoNormal>                    selectedLeft = null;</p>
+
+<p class=MsoNormal>                    matchedCount++;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>                    if (matchedCount === 4) {</p>
+
+<p class=MsoNormal>                        unlockBadge(&quot;Memoria d'acciaio &#129504;&quot;);</p>
+
+<p class=MsoNormal>                        addXP(50);</p>
+
+<p class=MsoNormal>                       
+document.getElementById('nav-verifica').disabled = false;</p>
+
+<p class=MsoNormal>                        alert(&quot;Bravissimo! Hai
+completato l'abbinamento. Hai sbloccato il Badge 'Memoria d'acciaio' (+50 XP) e
+la Verifica!&quot;);</p>
+
+<p class=MsoNormal>                    }</p>
+
+<p class=MsoNormal>                } else {</p>
+
+<p class=MsoNormal>                    alert(&quot;Abbinamento errato,
+riprova!&quot;);</p>
+
+<p class=MsoNormal>                   
+selectedLeft.btn.classList.remove('selected');</p>
+
+<p class=MsoNormal>                    selectedLeft = null;</p>
+
+<p class=MsoNormal>                }</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>        initMatchingGame();</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        // === LOGICA MODULO VERIFICA (10 DOMANDE) ===</p>
+
+<p class=MsoNormal>        const rawQuiz = [</p>
+
+<p class=MsoNormal>            { q: &quot;Qual è lo scopo principale della
+guerra 'Stato vs Stato'?&quot;, options: [&quot;Conquistare territori&quot;,
+&quot;Creare attacchi informatici&quot;, &quot;Cacciare i governanti&quot;,
+&quot;Destabilizzare senza confini&quot;], ans: 0, exp: &quot;La guerra Stato
+vs Stato si combatte per espandere o conquistare territori.&quot; },</p>
+
+<p class=MsoNormal>            { q: &quot;Quale tra questi è un esempio di
+guerra 'Stato vs Terroristi'?&quot;, options: [&quot;Stati Uniti vs Al
+Qaida&quot;, &quot;Partigiani vs Fascisti&quot;, &quot;Ucraina vs Russia&quot;,
+&quot;Attacco hacker a una banca&quot;], ans: 0, exp: &quot;Il conflitto USA vs
+Al Qaida o ISIS vede uno Stato combattere gruppi terroristici senza
+territorio.&quot; },</p>
+
+<p class=MsoNormal>            { q: &quot;Nella guerra 'Stato vs Civili
+(ribelli)', qual è l'obiettivo dei civili?&quot;, options: [&quot;Cacciare i
+governanti dal potere&quot;, &quot;Rubare dati da internet&quot;,
+&quot;Conquistare altri Paesi&quot;, &quot;Creare aziende esterne&quot;], ans:
+0, exp: &quot;I civili o ribelli imbracciano le armi per rovesciare i
+governanti.&quot; },</p>
+
+<p class=MsoNormal>            { q: &quot;Chi porta avanti le azioni nella
+Guerra Ibrida?&quot;, options: [&quot;Terroristi informatici (hacker)&quot;,
+&quot;L'esercito con i carri armati&quot;, &quot;I Re di un antico
+impero&quot;, &quot;I cittadini durante le elezioni&quot;], ans: 0, exp:
+&quot;La guerra ibrida usa attacchi informatici condotti da hacker.&quot; },</p>
+
+<p class=MsoNormal>            { q: &quot;Quale affermazione sui terroristi è
+CORRETTA?&quot;, options: [&quot;I terroristi non hanno uno Stato
+proprio&quot;, &quot;I terroristi possiedono sempre una nazione&quot;, &quot;I
+terroristi combattono solo con cavalli&quot;, &quot;I terroristi vogliono
+conquistare lo spazio&quot;], ans: 0, exp: &quot;Come evidenziato a lezione, i
+terroristi non hanno uno Stato.&quot; },</p>
+
+<p class=MsoNormal>            { q: &quot;L'esempio dei Partigiani vs Fascisti
+appartiene a quale tipo di guerra?&quot;, options: [&quot;Stato vs Civili
+(ribelli)&quot;, &quot;Guerra Ibrida&quot;, &quot;Stato vs Stato&quot;,
+&quot;Stato vs Terroristi&quot;], ans: 0, exp: &quot;I partigiani erano civili
+ribelli in lotta contro il governo fascista.&quot; },</p>
+
+<p class=MsoNormal>            { q: &quot;Qual è lo scopo principale della
+Guerra Ibrida?&quot;, options: [&quot;Creare disagio alla popolazione&quot;,
+&quot;Conquistare una capitale vicina&quot;, &quot;Firmare la pace
+subito&quot;, &quot;Aiutare i cittadini nei trasporti&quot;], ans: 0, exp:
+&quot;La guerra ibrida mira a destabilizzare i servizi di base creando disagio
+ai cittadini.&quot; },</p>
+
+<p class=MsoNormal>            { q: &quot;La Seconda Guerra Mondiale è un
+classico esempio di:&quot;, options: [&quot;Stato vs Stato&quot;, &quot;Guerra
+Ibrida&quot;, &quot;Stato vs Civili&quot;, &quot;Guerra unicamente
+digitale&quot;], ans: 0, exp: &quot;È stato un conflitto mondiale tra vari
+Stati sovrani per il controllo dei territori.&quot; },</p>
+
+<p class=MsoNormal>            { q: &quot;Lo scopo di 'destabilizzare uno
+Stato' è tipico di quale conflitto?&quot;, options: [&quot;Stato vs
+Terroristi&quot;, &quot;Stato vs Stato&quot;, &quot;Guerra Ibrida&quot;,
+&quot;Ribelli vs Civili&quot;], ans: 0, exp: &quot;I terroristi agiscono per
+creare paura e destabilizzare le istituzioni statali.&quot; },</p>
+
+<p class=MsoNormal>            { q: &quot;Cosa si intende per 'Hacker' nel
+contesto della guerra ibrida?&quot;, options: [&quot;Terroristi informatici che
+attaccano le reti web&quot;, &quot;Soldati in uniforme di terra&quot;,
+&quot;Dirigenti di banche locali&quot;, &quot;Lavoratori agricoli&quot;], ans:
+0, exp: &quot;Gli hacker usano la tecnologia per attaccare infrastrutture
+informatiche.&quot; }</p>
+
+<p class=MsoNormal>        ];</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        let shuffledQuiz = [];</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        function renderQuiz() {</p>
+
+<p class=MsoNormal>            const container =
+document.getElementById('quiz-container');</p>
+
+<p class=MsoNormal>            container.innerHTML = &quot;&quot;;</p>
+
+<p class=MsoNormal>            shuffledQuiz = [...rawQuiz].sort(() =&gt;
+Math.random() - 0.5);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            shuffledQuiz.forEach((item, index) =&gt; {</p>
+
+<p class=MsoNormal>                let qDiv = document.createElement('div');</p>
+
+<p class=MsoNormal>                qDiv.className = 'quiz-question';</p>
+
+<p class=MsoNormal>                </p>
+
+<p class=MsoNormal>                let qTitle = document.createElement('h4');</p>
+
+<p class=MsoNormal>                qTitle.innerText = (index + 1) + &quot;.
+&quot; + item.q;</p>
+
+<p class=MsoNormal>                qDiv.appendChild(qTitle);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>                let optsDiv = document.createElement('div');</p>
+
+<p class=MsoNormal>                optsDiv.className = 'quiz-options';</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>                // Creazione opzioni con indice per shuffle</p>
+
+<p class=MsoNormal>                let optsWithIdx = item.options.map((opt, i)
+=&gt; ({ text: opt, originalIndex: i }));</p>
+
+<p class=MsoNormal>                optsWithIdx.sort(() =&gt; Math.random() -
+0.5);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>                optsWithIdx.forEach(optObj =&gt; {</p>
+
+<p class=MsoNormal>                    let btn =
+document.createElement('button');</p>
+
+<p class=MsoNormal>                    btn.innerText = optObj.text;</p>
+
+<p class=MsoNormal>                    btn.onclick = () =&gt;
+checkAnswer(index, optObj.originalIndex, btn, optsDiv, item.exp);</p>
+
+<p class=MsoNormal>                    optsDiv.appendChild(btn);</p>
+
+<p class=MsoNormal>                });</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>                let fbDiv = document.createElement('div');</p>
+
+<p class=MsoNormal>                fbDiv.id = 'fb-' + index;</p>
+
+<p class=MsoNormal>                fbDiv.className = 'feedback-text';</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>                qDiv.appendChild(optsDiv);</p>
+
+<p class=MsoNormal>                qDiv.appendChild(fbDiv);</p>
+
+<p class=MsoNormal>                container.appendChild(qDiv);</p>
+
+<p class=MsoNormal>            });</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        function checkAnswer(qIdx, selectedOptIdx,
+clickedBtn, optsContainer, explanation) {</p>
+
+<p class=MsoNormal>            let buttons =
+optsContainer.querySelectorAll('button');</p>
+
+<p class=MsoNormal>            buttons.forEach(b =&gt; b.disabled = true);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            let correctOptIdx = shuffledQuiz[qIdx].ans;</p>
+
+<p class=MsoNormal>            let isCorrect = (selectedOptIdx ===
+correctOptIdx);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            userQuizAnswers[qIdx] = {</p>
+
+<p class=MsoNormal>                question: shuffledQuiz[qIdx].q,</p>
+
+<p class=MsoNormal>                isCorrect: isCorrect,</p>
+
+<p class=MsoNormal>                correctText: shuffledQuiz[qIdx].options[correctOptIdx]</p>
+
+<p class=MsoNormal>            };</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            let fb = document.getElementById('fb-' + qIdx);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            if (isCorrect) {</p>
+
+<p class=MsoNormal>                clickedBtn.classList.add('correct');</p>
+
+<p class=MsoNormal>                fb.innerText = &quot;Esatto! &quot; +
+explanation;</p>
+
+<p class=MsoNormal>                fb.style.color = &quot;#27ae60&quot;;</p>
+
+<p class=MsoNormal>                quizScore++;</p>
+
+<p class=MsoNormal>            } else {</p>
+
+<p class=MsoNormal>                clickedBtn.classList.add('wrong');</p>
+
+<p class=MsoNormal>                fb.innerText = &quot;Errato. &quot; +
+explanation;</p>
+
+<p class=MsoNormal>                fb.style.color = &quot;#c0392b&quot;;</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            // Mostra pulsante finale se risposto a tutte</p>
+
+<p class=MsoNormal>            if (Object.keys(userQuizAnswers).length === 10)
+{</p>
+
+<p class=MsoNormal>               
+document.getElementById('btn-submit-quiz').style.display = 'block';</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        renderQuiz();</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        function finishQuiz() {</p>
+
+<p class=MsoNormal>           
+document.getElementById('btn-submit-quiz').style.display = 'none';</p>
+
+<p class=MsoNormal>           
+document.getElementById('quiz-result').style.display = 'block';</p>
+
+<p class=MsoNormal>            </p>
+
+<p class=MsoNormal>            document.getElementById('lbl-score').innerText =
+&quot;Voto: &quot; + quizScore + &quot; / 10&quot;;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            let msg = &quot;&quot;;</p>
+
+<p class=MsoNormal>            if (quizScore &lt; 6) {</p>
+
+<p class=MsoNormal>                msg = &quot;Non ti arrendere! Rileggi le
+schede di studio e riprova, imparerai sicuramente!&quot;;</p>
+
+<p class=MsoNormal>            } else if (quizScore &gt;= 6 &amp;&amp;
+quizScore &lt;= 7) {</p>
+
+<p class=MsoNormal>                msg = &quot;Buon lavoro! Hai compreso i
+concetti principali dei tipi di guerra!&quot;;</p>
+
+<p class=MsoNormal>            } else {</p>
+
+<p class=MsoNormal>                msg = &quot;Eccellente! Sei diventato un
+vero esperto del tema!&quot;;</p>
+
+<p class=MsoNormal>                unlockBadge(&quot;Esperto <span
+style='font-family:"Segoe UI Symbol","sans-serif"'>&#127942;</span>&quot;);</p>
+
+<p class=MsoNormal>                addXP(100);</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>           
+document.getElementById('lbl-feedback-message').innerText = msg;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        // === GENERAZIONE REPORT PDF ===</p>
+
+<p class=MsoNormal>        function generateReport() {</p>
+
+<p class=MsoNormal>            document.getElementById('rep-nome').innerText =
+studentData.nome || &quot;Studente&quot;;</p>
+
+<p class=MsoNormal>            document.getElementById('rep-classe').innerText
+= studentData.classe || &quot;-&quot;;</p>
+
+<p class=MsoNormal>            document.getElementById('rep-scuola').innerText
+= studentData.scuola || &quot;-&quot;;</p>
+
+<p class=MsoNormal>            document.getElementById('rep-data').innerText =
+studentData.data || &quot;-&quot;;</p>
+
+<p class=MsoNormal>            document.getElementById('rep-xp').innerText =
+xp;</p>
+
+<p class=MsoNormal>            document.getElementById('rep-badges').innerText
+= badges.join(&quot;, &quot;) || &quot;Nessun badge sbloccato&quot;;</p>
+
+<p class=MsoNormal>            document.getElementById('rep-voto').innerText =
+quizScore;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            let wrongList =
+document.getElementById('rep-wrong-list');</p>
+
+<p class=MsoNormal>            wrongList.innerHTML = &quot;&quot;;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            let wrongAnswers = userQuizAnswers.filter(a
+=&gt; a &amp;&amp; !a.isCorrect);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            if (wrongAnswers.length === 0) {</p>
+
+<p class=MsoNormal>                wrongList.innerHTML = &quot;&lt;li&gt;Nessun
+errore commesso nella verifica! Ottimo lavoro!&lt;/li&gt;&quot;;</p>
+
+<p class=MsoNormal>            } else {</p>
+
+<p class=MsoNormal>                wrongAnswers.forEach(w =&gt; {</p>
+
+<p class=MsoNormal>                    let li = document.createElement('li');</p>
+
+<p class=MsoNormal>                    li.innerHTML =
+&quot;&lt;strong&gt;Domanda:&lt;/strong&gt; &quot; + w.question +
+&quot;&lt;br&gt;&lt;span style='color:green;'&gt;Risposta corretta: &quot; +
+w.correctText + &quot;&lt;/span&gt;&lt;br&gt;&lt;br&gt;&quot;;</p>
+
+<p class=MsoNormal>                    wrongList.appendChild(li);</p>
+
+<p class=MsoNormal>                });</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            window.print();</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>    &lt;/script&gt;</p>
+
+<p class=MsoNormal>&lt;/body&gt;</p>
+
+<p class=MsoNormal>&lt;/html&gt;</p>
+
+</div>
+
+</body>
+
+</html>
